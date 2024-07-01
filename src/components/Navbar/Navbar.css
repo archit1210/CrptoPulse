@@ -11,10 +11,6 @@
     width: max(12vw, 120px);
 }
 
-/* .navbar img {
-    mix-blend-mode: screen;
-} */
-
 .navbar ul {
     display: flex;
     font-weight: 600;
@@ -59,4 +55,30 @@
     background: white;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width:900px) {
+    .navbar {
+        padding: 20px 8px;
+    }
+
+    .navbar button {
+        gap: 8px;
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar {
+        padding: 20px 8px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar button img {
+        width: 12px;
+    }
 }
