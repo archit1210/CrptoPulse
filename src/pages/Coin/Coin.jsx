@@ -86,6 +86,7 @@ const Coin = () => {
           <ul>
             <li>Market Cap</li>
             <li>
+              {currency.symbol}
               {coinData.market_data.current_price[
                 currency.name
               ].toLocaleString()}
@@ -94,12 +95,14 @@ const Coin = () => {
           <ul>
             <li>24 Hours Higher value</li>
             <li>
+              {currency.symbol}
               {coinData.market_data.high_24h[currency.name].toLocaleString()}
             </li>
           </ul>
           <ul>
             <li>24 Hours Lower value</li>
             <li>
+              {currency.symbol}
               {coinData.market_data.low_24h[currency.name].toLocaleString()}
             </li>
           </ul>
