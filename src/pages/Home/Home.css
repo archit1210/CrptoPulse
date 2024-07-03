@@ -159,5 +159,24 @@
     .hero form input {
         width: 100px;
     }
+}
 
+@media (max-width: 470px) {
+    .hero form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hero form input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .hero form button {
+        width: 100%;
+    }
+
+    .table-layout {
+        font-size: 11px;
+    }
 }
